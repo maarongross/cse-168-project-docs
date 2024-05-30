@@ -9,24 +9,26 @@
     <h1>CSE 168 Final Project</h1>
     <h2>By Matthew Gross and Nicholas Nakano</h2>
     <h3>Objectives</h3>
-    <p>Our goal is to implement the following extensions to our current pathtracer implementation:
+    <p>Our goal is to implement the following extensions to our current path-tracer implementation:
         <ul>
             <li>Realtime Rendering</li>
             <li>Volumetric Lighting (implementation structure from <i>insert link here</i>)</li>
             <li>Glass (refractive BRDFs)</li>
-            <li>a first-person demo</li>
             <li>compatibility with .obj files</li>
         </ul>
     </p>
-    <p>These can all help us with our final goal of rendering a realtime scene of a 1996 BMW M3</p>
+    <p>To demonstrate these features, we will be attempting to render a car in foggy conditions.</p>
     <figure>
         <img src="bmw_m3.webp">
-        <figcaption>Above is a picture of a 1996 BMW M3 for reference</figcaption>
+        <figcaption><i>Above is a picture of a 1996 BMW M3 for reference.</i></figcaption>
     </figure>
-    <p>The volumetric lighting will help make the lights on the car more realistic, while glass will help make the car's windows see-through. Furthermore, we need to add .obj file compatibility in order to render the car model. Realtime rendering and the first person demo are extras feature that would be nice to have but are not necessary.</p>
-    <h3>What we have so far</h3>
-    <p>So far, we have been working on implementing volumetric lighting.</p>
-
-    <!--PUT VOLUMETRIC LIGHTING PROCESS AND IMAGES HERE-->
+    <p>The volumetric lighting features will render the exhaust gases while a glass shader will render the windows. Furthermore, we need to add .obj file compatibility to render the car model.</p>
+    <h3>What we have so far:</h3>
+    <p>Following volumetric path-tracing write-ups from UCSD Graduate School Classes, we've achieved very primitive volumetric lighting. This currently only includes the rendering of monochromatic absorption-only homogeneous volumes.</p>
+    <figure>
+        <img src="v1.png">
+        <figcaption><i>An emissive sphere with light propagated through a medium towards the camera.</i></figcaption>
+    </figure>
+    <p>Our next immediate goal is to model the scattering of light from other emissive sources into other volumes.</p>
 </body>
 </html> 
