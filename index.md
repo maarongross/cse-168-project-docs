@@ -40,3 +40,7 @@ This is a simple dodecahedron that we downloaded from the FSU website and import
 ![Image](al.png) ![Image](trumpet.png)
 
 These are images of other basic objects from the FSU website that we applied materials to. The first one of the man had material values that were already included. The second one of the trumpet did not have material values, so we had to create those manually.
+
+![Image](m3_1.png) ![Image](m3_2.png)
+
+These are images of a 1996 BMW M3. Unfortunately, we could not combine Volumetric Lighting with this scene; however, this scene does showcase a complicated .obj and .mtl file import, as well as our Glass BSDF.
